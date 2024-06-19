@@ -1,5 +1,5 @@
 # Deployed to vercel
-[click here](https://adgvit-news.vercel.app/)
+[CLICK HERE FOR WEBSITE PREVIEW](https://adgvit-news.vercel.app/)
 
 ## 
 IF ABOVE LINK DOESN'T WORK
