@@ -311,10 +311,10 @@ btn.addEventListener('click', () => {
 })
 
 function animateBox(i) {
-    gsap.fromTo(`.box-${i}`, { opacity: 1, duration: 1 }, { opacity: 0.4, duration: 1, repeat: -1, yoyo: true, ease: 'power.inOut' });
+    gsap.fromTo(`.box-${i}`, { opacity: 1, duration: 1 }, { opacity: 0.4, duration: 1, repeat: 5, yoyo: true, ease: 'power.inOut' });
 }
 function animateRecentBox(i) {
-    gsap.fromTo(`.rbox-${i}`, { opacity: 1, duration: 1 }, { opacity: 0.4, duration: 1, repeat: -1, yoyo: true, ease: 'power.inOut' });
+    gsap.fromTo(`.rbox-${i}`, { opacity: 1, duration: 1 }, { opacity: 0.4, duration: 1, repeat: 5, yoyo: true, ease: 'power.inOut' });
 }
 
 const fetchBns = async () => {
@@ -357,7 +357,7 @@ const fetchBns = async () => {
         var newsBox = document.querySelectorAll(".b-box")
 
         newsBox[i].addEventListener('click', async () => {
-            gsap.fromTo(`.b-box-${i}`, { opacity: 1, duration: 1 }, { opacity: 0.4, duration: 1, repeat: -1, yoyo: true, ease: 'power.inOut' });
+            gsap.fromTo(`.b-box-${i}`, { opacity: 1, duration: 1 }, { opacity: 0.4, duration: 1, repeat: 5, yoyo: true, ease: 'power.inOut' });
             newsBox.innerHTML = ''
             newsBox.innerHTML = `<sl-spinner style="font-size: 3rem; position: relative;
                 top: 50%; right: -50%; transform: translate(50%, 200%);"></sl-spinner>`
@@ -428,7 +428,7 @@ const fetchEnt = async () => {
         var newsBox = document.querySelectorAll(".e-box")
 
         newsBox[i].addEventListener('click', async () => {
-            gsap.fromTo(`.e-box-${i}`, { opacity: 1, duration: 1 }, { opacity: 0.4, duration: 1, repeat: -1, yoyo: true, ease: 'power.inOut' });
+            gsap.fromTo(`.e-box-${i}`, { opacity: 1, duration: 1 }, { opacity: 0.4, duration: 1, repeat: 5, yoyo: true, ease: 'power.inOut' });
             newsBox.innerHTML = ''
             newsBox.innerHTML = `<sl-spinner style="font-size: 3rem; position: relative;
                 top: 50%; right: -50%; transform: translate(50%, 200%);"></sl-spinner>`
