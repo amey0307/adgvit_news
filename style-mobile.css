@@ -4,6 +4,8 @@
 :root{
     --dark: linear-gradient(to bottom right, #1f1136, rgb(30, 24, 33));
     --black: rgb(34, 38, 52);
+    --orange: linear-gradient(to bottom right, #1f1136, rgb(97, 46, 25));
+    --orangeC: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --text-color : white;
 }
 
@@ -24,7 +26,7 @@ h1{
 }
 
 body{
-    background-color: var(--dark);
+    background-color: var(--orange);
     color: var(--text-color);
 }
 
@@ -135,14 +137,15 @@ nav .note{
 
 .filterBtn{
     border-radius: 5px;
-    font-size: large;
-    background: linear-gradient(to right, #1f1136, rgb(67, 26, 89));
+    font-size: medium;
+    background: var(--orange);
     border: 2px;
     color: white;
-    padding: 10px;
+    padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
-    transition: all 0.3s ease;
+    margin-bottom: 10px;
+
 }
 
 .filterBtn:hover{
@@ -176,7 +179,6 @@ nav .note{
 }
 
 .box{
-    height: 30vh;
     position: relative;
 }
 
@@ -184,7 +186,6 @@ nav .note{
     background-color: rgba(191, 195, 191, 0.094);
     backdrop-filter: blur(20px);
     color: white;
-    backdrop-filter: blur(20px);
     border-radius: 10px;
     width: fit-content;
     min-height: fit-content;
@@ -302,7 +303,7 @@ nav .note{
 
 .catNews{
     /* height: 40vh; */
-    background-color: var(--dark);
+    background-color: var(--orange);
     color: white;
     padding-top: 10px;
 }
@@ -447,11 +448,12 @@ ul {
     flex-direction: column;
     padding: 10px;
     overflow: hidden;
+    background: var(--orange);
 }
 
 .catNews {
     /* height: 40vh; */
-    background: var(--dark);
+    background: var(--orange);
     color: white;
 }
 
@@ -493,7 +495,7 @@ footer .f-logo{
     flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
-    padding: 10px;
+    /* padding: 10px; */
     padding-right: 30px;
     align-items: center;
 }
@@ -508,18 +510,17 @@ footer .f-logo{
         position: relative;
         left: 6rem;
         }
-    }
 
-        .eml{
-            border: 5px white;
-            color: white;
-            border-radius: 5px;
-            border-bottom: 2px snow;
-            font-size: small;
-            height: 2rem;
-            background-color: var(--black);
-            top: 4rem;
-            left: 22vw;
+     .eml{
+        border: 5px white;
+        color: white;
+        border-radius: 5px;
+        border-bottom: 2px snow;
+        font-size: small;
+        height: 2rem;
+        background-color: var(--black);
+        top: 4rem;
+        left: 22vw;
         }
 
     .sbBtn{

@@ -1,16 +1,17 @@
-// const api = "pub_467191315b21252f9281aae32a54304e4fc3e"
-// const api = "pub_46720c157851a3fbaea6b2066aea12ec31fb5"
-// const api = "pub_4672983141bb7e69268e400242a0c8e80795d"
-
 const apiKeys = [
-    "pub_4677528d8ab6cd621e3c071855b1b0fdcd717", "pub_467772e57fc3ab14fbf91ed6580fa05269cb2",
+    "pub_4677528d8ab6cd621e3c071855b1b0fdcd717",
+    "pub_467772e57fc3ab14fbf91ed6580fa05269cb2",
     "pub_46778de96741fbf557af341100e4065772b2e",
     "pub_46781fbac0a433b60b9ff6a8d8b22ece8f4c0",
     "pub_467825a65f98d89cdb23a5bc4ddf022f1c802",
-    "pub_467857befdebfb9f586f558a4d2d7f198b2fb"
+    "pub_467857befdebfb9f586f558a4d2d7f198b2fb",
+    "pub_4680192c90558ea2a02cfd8dba840582da1d6",
+    "pub_46802cd52de836d39c3ebc6d47e705b9b257d",
+    "pub_46803482253e681810a06db1877e1b8b30407",
+    "pub_468049199f5d059e2fdf0138a0e0fcf37c047"
 ]
 
-const api = apiKeys[Math.floor(Math.random() * 6)]
+const api = apiKeys[Math.floor(Math.random() * 10)]
 
 var container = document.querySelector(".newsSection");
 

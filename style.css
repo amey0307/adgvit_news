@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playwrite+AU+NSW:wght@100..400&display=swap');
 
 :root{
-    /* --dark: linear-gradient(to bottom right, #1f1136, rgb(30, 24, 33)); */
+    --purple: linear-gradient(to bottom right, #1f1136, rgb(30, 24, 33));
     --dark: linear-gradient(to bottom right, #1f1136, rgb(97, 46, 25));
     --black: rgb(34, 38, 52);
     --text-color : white;
@@ -70,7 +70,7 @@ nav p{
 }
 
 .searchFilter{
-    background: var(--dark);
+    background: var(--purple);
     color: white;
     height: 25vh;
     padding: 10px;
@@ -126,7 +126,7 @@ nav p{
 .filterBtn{
     border-radius: 5px;
     font-size: large;
-    background: linear-gradient(to right, #1f1136, rgb(67, 26, 89));
+    background: var(--dark);
     border: 2px;
     color: white;
     padding: 10px;
@@ -320,7 +320,7 @@ nav p{
 
 footer{
     padding-top: 20px;
-    background: var(--dark);
+    background: var(--purple);
     padding-right: 20px;
     overflow: hidden;
 }
