@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="style-mobile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/light.css" />
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <img src="logo.png" alt="logo" class="logo">
+
+        <div class="note">
+            <p>NOTE : This API has rate limit so kindly don't refresh multiple times</p>
+        </div>
+    </nav>
+
+    <!-- filter -->
+    <section class="searchFilter">
+        <h1>FILTERS</h1>
+        <div class="filters">
+            <div class="flex">
+                <label for="lang" class="label lang">LANGUAGE</label>
+                <select name="lang" id="dd_l">
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="gu">Gujrati</option>
+                    <option value="el">Greek</option>
+                    <option value="ko">Korean</option>
+                    <option value="ml">Malayalam</option>
+                    <option value="pa">Punjabi</option>
+                    <option value="bn">Bengali</option>
+                    <option value="nl">Dutch</option>
+                    <option value="gr">Estonian</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="it">Italian</option>
+                    <option value="jp">Japanese</option>
+                    <option value="kn">Kannada</option>
+                </select>
+            </div>
+
+            <div class="flex">
+                <label for="lang" class="label country">COUNTRY</label>
+                <select name="lang" id="dd_c">
+                    <option value="in">India</option>
+                    <option value="us">United states of america</option>
+                    <option value="au">Australia</option>
+                    <option value="be">Belgium</option>
+                    <option value="fr">France</option>
+                    <option value="de">Germany</option>
+                    <option value="jp">Japan</option>
+                </select>
+            </div>
+
+            <div class="flex">
+                <label for="lang" class="label category">CATEGORY</label>
+                <select name="lang" id="dd_ct">
+                    <option value="business">business</option>
+                    <option value="crime">crime</option>
+                    <option value="domestic">domestic</option>
+                    <option value="education">education</option>
+                    <option value="entertainment">entertainment</option>
+                    <option value="environment">environment</option>
+                    <option value="food">food</option>
+                    <option value="health">health</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="filterBtnP">
+            <button type="button" class="filterBtn">Filter</button>
+        </div>
+    </section>
+
+    <!-- news section -->
+    <section id="newsS" class="news">
+        <div class="topNews">
+            <h1 class="topNewsHeading">FOR YOU</h1>
+            <div class="newsSection">
+                <!-- top news -->
+            </div>
+        </div>
+        <div class="recentNews">
+            <h1>RECENT</h1>
+            <!-- recent news -->
+            <div class="recentNewsSection"></div>
+        </div>
+    </section>
+
+    <!-- call to action -->
+    <section class="cta">
+        <h1>SUBSCRIBE TO </h1>
+        <img src="logo.png" alt="" class="f-logo">
+
+        <div class="ml">
+            <input type="email" class="eml">
+            <button class="sbBtn">SUBSCRIBE</button>
+        </div>
+    </section>
+
+    <!-- News Category -->
+    <section class="catNews">
+        <h1 class="pl-10">BUSINESS NEWS</h1>
+        <hr>
+        <div class="business">
+        </div>
+        <h1 class="pl-10">ENTERTAINMENT NEWS</h1>
+        <hr>
+        <div class="entertainment">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- <hr> -->
+    <footer>
+        <div class="ft">
+            <a href="#newsS"><img src="logo.png" alt="logo" class="f-logo"></a>
+
+            <div>
+                <ul>
+                    <li>WORLD NEWS</li>
+                    <li>FAQs</li>
+                    <li>SUBMIT A TICKET</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>SERVICES</li>
+                    <li>THEME TWERK</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>SHOWCASE</li>
+                    <li>WIDGETKIT</li>
+                    <li>SUPPORT</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>ABOUT US</li>
+                    <li>CONTACT US</li>
+                    <li>AFFILIATES</li>
+                    <li>RESOURCES</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="icons">
+            <sl-icon name="meta" class="icon"></sl-icon>
+            <sl-icon name="whatsapp" class="icon"></sl-icon>
+            <sl-icon name="linkedin" class="icon"></sl-icon>
+            <sl-icon name="twitter-x" class="icon"></sl-icon>
+            <sl-icon name="envelope-at" class="icon"></sl-icon>
+            <sl-icon name="three-dots" class="icon"></sl-icon>
+        </div>
+
+        <div class="cp">
+            <sl-icon name="c-circle" class="cp-icon"></sl-icon>
+            <h6>copyright 2024</h6>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
