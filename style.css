@@ -29,7 +29,7 @@ body{
 }
 
 .news{
-    background: var(--dark);
+    background: var(--purple);
     color: var(--text-color);
 }
 
@@ -70,7 +70,7 @@ nav p{
 }
 
 .searchFilter{
-    background: var(--purple);
+    background: #1f1136;
     color: white;
     height: 25vh;
     padding: 10px;

@@ -448,7 +448,7 @@ ul {
     flex-direction: column;
     padding: 10px;
     overflow: hidden;
-    background: var(--orange);
+    background: var(--dark);
 }
 
 .catNews {
